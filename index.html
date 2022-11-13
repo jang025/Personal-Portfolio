@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeremy Ang</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/5148a90218.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("QiYKO3_XPt2eK_Kag");
+      })();
+    </script>
+  </head>
+
+  <body>
+    <section id="landing-page" onmousemove="moveBackground(event)">
+      <nav>
+        <ul class="nav__link--list">
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >About</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#projects"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Projects</a
+            >
+          </li>
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Contact</a
+            >
+          </li>
+
+          <li class="nav__link click" onclick="toggleContrast()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              ><i class="fa-solid fa-circle-half-stroke"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+
+      <header class="header">
+        <div class="header__content">
+          <h1 class="title">Hey</h1>
+          <h1 class="title blue">I'm Jeremy Ang</h1>
+          <p class="header__para">
+            I'm a <b class="blue">Software Engineer</b> with a strong passion
+            for building websites and web applications with great user
+            experience.
+            <br />
+            Here's a bit more
+            <b class="blue click" onclick="toggleModal()">about me</b>.
+          </p>
+          <div class="social__list">
+            <a href="#" target="_blank" class="social__link click">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/jang025" target="_blank" class="social__link click">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="#" target="_blank" class="social__link click">
+              <i class="fa-solid fa-file"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+      <a href="#">
+        <button class="mail__button click" onclick="toggleModal()">
+          <i class="fa-solid fa-envelope"></i>
+        </button>
+      </a>
+      <a href="#projects" class="scroll"
+        ><div class="scroll__icon click"></div
+      ></a>
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__title--about">
+            Here's a bit about me.
+          </h3>
+          <br />
+          <p class="modal__para">
+            I'm a <b class="blue"> Software Engineer </b> that enjoys building
+            websites and web applications. I also enjoy writing clean,
+            maintainable, scalable code that are designed for large scale
+            applications.
+            <br />
+            <br />
+            Some of the technology stack that i use more frequently for my
+            projects are <b class="blue">React</b>,
+            <b class="blue">TypeScript</b> and
+            <b class="blue">Tailwind CSS </b>
+          </p>
+          <div class="modal__languages">
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                alt=""
+              />
+              <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+                alt=""
+              />
+              <span class="language__name">CSS</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+                alt=""
+              />
+              <span class="language__name">JavaScript</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png"
+                alt=""
+              />
+              <span class="language__name">TypeScript</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/640px-Nextjs-logo.svg.png"
+                alt=""
+              />
+              <span class="language__name">Nextjs</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+                alt=""
+              />
+              <span class="language__name">React</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png"
+                alt=""
+              />
+              <span class="language__name">Python</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png"
+                alt=""
+              />
+              <span class="language__name">C</span>
+            </figure>
+          </div>
+        </div>
+        <div class="modal__half modal__contact">
+          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+          <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
+          <h3 class="modal__sub-title modal__sub-title--contact">
+            I'm currently open to new opportunities.
+          </h3>
+          <form id="contact__form" onsubmit="contact(event)">
+            <div class="form__item">
+              <label class="form__item--label">Name</label>
+              <input class="input" name="user_name" type="text" required />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input class="input" name="user_email" type="email" required />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message</label>
+              <textarea
+                class="input"
+                name="message"
+                type="text"
+                required
+              ></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">
+              Send it my way
+            </button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Thanks for the message! Looking forward to speaking to you soon.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here are some of my <span class="blue">projects</span>
+          </h1>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="/assets/fooddeliveryinsoutheastasia.jpg"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--background"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Food Delivery Build
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    Technology Stack : ReactNative, TailwindCSS, Expo, Sanity,
+                    Redux, GROQ 
+                  </h4>
+                  <br />
+                  <p class="project__description--para">
+                    <b>Cross-Platform App</b> that works on IOS , Android and
+                    the Web
+                    <br />
+                    <br />
+                    <b> Created </b> using ReactNative
+                    <br />
+                    <br />
+                    <b> Applied </b> Redux to handle the state management
+                    <br />
+                    <br />
+                    <b>Integrated</b> TailwindCSS to build the user interface
+                    <br />
+                    <br />
+                    <b>Used</b> GROQ Query Language to connect the sanity
+                    backend
+                    <br />
+                    <br />
+                    <b>Connected</b> the Backend using sanity Content Management
+                    System
+                    <br />
+                    <br />
+                    <b>Deployed</b> on Vercel
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/jang025/food-delivery-build-"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a
+                      href="https://food-delivery-build-jang025.vercel.app"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="/assets/Google_Homepage.svg.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--background"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Google Search Engine Build
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    Technology Stack : Next.js, TailwindCSS, React, Google Search API
+                  </h4>
+                  <br />
+                  <p class="project__description--para">
+                    <b>Fully Responsive </b> Search Engine
+                    <br />
+                    <br />
+                    <b> Created </b> using React
+                    <br />
+                    <br />
+                    <b> Connected  </b> Google's API to build a functional search engine 
+                    <br />
+                    <br />
+                    <b>Integrated</b> TailwindCSS to build the user interface
+                    <br />
+                    <br />
+                    <b>Deployed</b> on Vercel
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/jang025/google-clone"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a
+                      href="https://google-clone-jang025.vercel.app"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="/assets/app-tips-medium-00-hero.jpg"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--background"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">Medium Blog Build</h3>
+                  <h4 class="project__description--sub-title">
+                    Technology Stack : React, TailwindCSS, Next.js, Sanity, Typescript, GROQ
+                  </h4>
+                  <br />
+                  <p class="project__description--para">
+                    <b>Utilised</b> incremental static regeneration to load pages 
+                    the Web
+                    <br />
+                    <br />
+                    <b>Created</b> using React
+                    <br />
+                    <br />
+                    <b>Integrated</b> TailwindCSS to build the user interface
+                    <br />
+                    <br />
+                    <b>Used</b> GROQ Query Language to connect the sanity
+                    backend
+                    <br />
+                    <br />
+                    <b>Connected</b> the Backend using sanity Content Management
+                    System
+                    <br />
+                    <br />
+                    <b>Deployed</b> on Vercel
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/jang025/medium-clone"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a
+                      href="https://medium-clone-jang025.vercel.app"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row footer__row">
+          <div class="footer__social--list">
+            <a
+              href="https://github.com/jang025"
+              target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              GitHub
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="#"
+              onclick="toggleModal()"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Contact
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Resume
+            </a>
+          </div>
+          <div class="footer__copyright">
+            Copyright &copy; 2022 Jeremy Ang Pin En
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
